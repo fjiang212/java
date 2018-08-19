@@ -11,6 +11,10 @@
 * `Functional Interface`: Any interface with a SAM(Single Abstract Method) is a functional interface, and its implementation may be treated as lambda expressions.
 
 # Lambda Expression
+## Functional Interfaces
+![Functional Interfaces](images/FunctionInterfaces.PNG)
+
+
 
 # Method Expressions Class::staticMethod
 
