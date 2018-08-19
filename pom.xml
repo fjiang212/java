@@ -10,6 +10,6 @@
 
 
 	<modules>
-		<module>java8-simeple-exampels</module>
+		<module>java8-simple-examples</module>
 	</modules>
 </project>
