@@ -8,17 +8,53 @@
 
 ---
 * `Higher order functions` are simple functions that can receive functions as arguments and can return another function as results.
-* `Functional Interface`: Any interface with a SAM(Single Abstract Method) is a functional interface, and its implementation may be treated as lambda expressions.
+* `Functional Interface`: Any interface with a SAM(Single Abstract Method) is a functional interface, and **its implementation may be treated as lambda expressions**.
 
 # Lambda Expression
+A lambda expression is a method without a name that is used to pass around behavior
+as if it were data
+
 ## Functional Interfaces
 ![Functional Interfaces](images/FunctionInterfaces.PNG)
 
+## Examples
 
+```java
+(int a) -> a * 2; // Calculate the double of a
+a -> a * 2; // or simply without type
+
+(a, b) -> a + b; // Sum of 2 parameters
+
+//If the lambda is more than one expression we can use { } and return
+// Not good example, functional style programming should immutable and 
+// without variables
+(x, y) -> {
+    int sum = x + y;
+    int avg = sum / 2;
+    return avg;
+}
+```
+
+A lambda expression cannot stand alone in Java, it need to be associated to a functional interface.
+
+```java
+interface MyMath {
+    int getDoubleOf(int a);
+}
+    
+MyMath d = a -> a * 2; // associated to the interface
+d.getDoubleOf(4); // is 8
+```
+
+# Streams
+* It’s very easy to figure out whether an operation is eager or lazy: look at what it returns. If it gives you back a Stream, it’s lazy; if it gives you back another value or void, then it’s eager.
+* Internal iteration is a way of iterating over a collection that delegates more control over the iteration to the collection.
+* A Stream is the internal iteration analogue of an Iterator.
+* Many common operations on collections can be performed by combining methods on Stream with lambda expressions.
 
 # Method Expressions Class::staticMethod
 
-# Streams
+
 
 # References
 * https://github.com/BafS/Java8-CheatSheet
