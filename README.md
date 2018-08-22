@@ -1,5 +1,5 @@
 # Functional Programming
-**functional programming** is a programming paradigm—a style of building the structure and elements of computer programs—that treats **computation as the evaluation of mathematical functions and avoids changing-state and mutable data**. It is a declarative programming paradigm, which means programming is done with **expressions or declarations** instead of statements.
+**functional programming** is a programming paradigmâ€”a style of building the structure and elements of computer programsâ€”that treats **computation as the evaluation of mathematical functions and avoids changing-state and mutable data**. It is a declarative programming paradigm, which means programming is done with **expressions or declarations** instead of statements.
  
 ## Concepts
 * `Imperative style`: Telling programs what to do, as well as **how to do** it
@@ -46,8 +46,11 @@ MyMath d = a -> a * 2; // associated to the interface
 d.getDoubleOf(4); // is 8
 ```
 
+## Articles
+* https://dzone.com/articles/supplier-and-consumer-interface-in-java8
+
 # Streams
-* It’s very easy to figure out whether an operation is eager or lazy: look at what it returns. If it gives you back a Stream, it’s lazy; if it gives you back another value or void, then it’s eager.
+* Itâ€™s very easy to figure out whether an operation is eager or lazy: look at what it returns. If it gives you back a Stream, itâ€™s lazy; if it gives you back another value or void, then itâ€™s eager.
 * Internal iteration is a way of iterating over a collection that delegates more control over the iteration to the collection.
 * A Stream is the internal iteration analogue of an Iterator.
 * Many common operations on collections can be performed by combining methods on Stream with lambda expressions.
