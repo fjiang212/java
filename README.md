@@ -81,7 +81,8 @@ Interfaces give you multiple inheritance but no fields, while abstract classes l
 
 ## Method Expressions Class::staticMethod
 
-
+# Optional
+https://github.com/fjiang212/java8/blob/master/java8-simple-examples/README.md#optional
 
 # References
 * https://github.com/BafS/Java8-CheatSheet
