@@ -79,7 +79,15 @@ Interfaces give you multiple inheritance but no fields, while abstract classes l
 
 ## Static Methods on Interfaces
 
-## Method Expressions Class::staticMethod
+## Method Reference
+There are four kinds of method references:
+
+| Kind	| Example|
+| ------------- |:-------------:|
+|Reference to a static method	|ContainingClass::staticMethodName|
+|Reference to an instance method of a particular object	|containingObject::instanceMethodName|
+|Reference to an instance method of an arbitrary object of a particular type|	ContainingType::methodName|
+|Reference to a constructor	|ClassName::new|
 
 # Optional
 https://github.com/fjiang212/java8/blob/master/java8-simple-examples/README.md#optional
