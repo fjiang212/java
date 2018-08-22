@@ -69,10 +69,13 @@ public interface Parent {
 }
 ```
 
-Rule 
+### Rule 
 * Any class wins over any interface. So if there’s a method with a body, or an abstract declaration, in the superclass chain, we can ignore the interfaces completely
 * Subtype wins over supertype. If we have a situation in which two interfaces are competing to provide a default method and one interface extends the other, the subclass wins.
 * No rule 3. If the previous two rules don’t give us the answer, the subclass must either implement the method or declare it abstract.
+
+### Notes
+Interfaces give you multiple inheritance but no fields, while abstract classes let you inherit fields but you don’t get multiple inheritance. When modeling your problem domain, you need to think about this tradeoff, which wasn’t necessary in previous versions of Java.
 
 ## Method Expressions Class::staticMethod
 
