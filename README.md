@@ -55,8 +55,8 @@ d.getDoubleOf(4); // is 8
 * A Stream is the internal iteration analogue of an Iterator.
 * Many common operations on collections can be performed by combining methods on Stream with lambda expressions.
 
-# Method 
-## Default method
+# Methods 
+## Default method on interfaces
 **Default Method” or (Defender methods)** allows a developer to add new methods to the Interfaces without breaking the existing implementation of these Interface.
 
 ```java
@@ -76,6 +76,8 @@ public interface Parent {
 
 ### Notes
 Interfaces give you multiple inheritance but no fields, while abstract classes let you inherit fields but you don’t get multiple inheritance. When modeling your problem domain, you need to think about this tradeoff, which wasn’t necessary in previous versions of Java.
+
+## Static Methods on Interfaces
 
 ## Method Expressions Class::staticMethod
 
