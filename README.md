@@ -55,7 +55,21 @@ d.getDoubleOf(4); // is 8
 * A Stream is the internal iteration analogue of an Iterator.
 * Many common operations on collections can be performed by combining methods on Stream with lambda expressions.
 
-# Method Expressions Class::staticMethod
+# Method 
+## Default method
+**Default Method” or (Defender methods)** allows a developer to add new methods to the Interfaces without breaking the existing implementation of these Interface.
+
+```java
+public interface Parent {
+    public void message(String body);
+    public default void welcome() {
+        message("Parent: Hi!");
+    }
+    public String getLastMessage();
+}
+```
+
+## Method Expressions Class::staticMethod
 
 
 
